@@ -1,22 +1,22 @@
 /*Exercise 1.  Fill in the correct id to target the paragraph tag*/
   function fontSize(){
-    document.getElementById(______).style.fontSize = "200%";
+    document.getElementById("biggie").style.fontSize = "200%";
   }
 
  /*Exercise 2. change the font color to red*/
   function colorMeBadd(){
-    document.getElementById(_______).style.color = '______'; 
+    document.getElementById("colors").style.color = 'red'; 
   }
 
 /*Exercise 3. fill in the spaces to make this function operate:*/
   function showAnswer(){
-    document.getElementById(_______).________ = " C (da sea get it?) arrrr!";
+    document.getElementById("answer").innerHTML = " C (da sea get it?) arrrr!";
   }
 
 /*Exercise 4.  Instruct the following function to display the message "My name is Lee, Brrruuuce Lee!" in the paragraph element after the button is clicked.*/
 
   function kungfu(){
-    ________.getElementById(________).________ = "My name is Lee, Brrruuuce Lee!";
+    document.getElementById("beWater").innerHTML = "My name is Lee, Brrruuuce Lee!";
   }
 
 
@@ -28,26 +28,32 @@ window.onload = function (){
 
 var firstQuote = "Our lives are defined by opportunities; even the ones we miss.";
 
-_________.getElementById(________).addEventListener(______, sayQuote);
+document.getElementById("Benjamin").addEventListener("click", sayQuote);
 
 function sayQuote(){
-  document._________(_______).__________ = __________;
+  document.getElementById("lines").innerHTML = firstQuote;
 }
 
 
 /*Exercise 6. Add another event listener to the image below that will display an inspirational quote from our beloved DJ Khaled after it is clicked</p>*/
 
-document.getElementById().addEventListener("click", rap);
+document.getElementById("khaled").addEventListener("click", rap);
 
-function (){
-  document = "another one, another one, another one...and another one";
+function rap(){
+  document.getElementById("wedabest").innerHTML = "another one, another one, another one...and another one";
 }
 
 
 /*Exercise 7.  Generate a random quote from clicking on a button*/
 var quotes = ["It's a funny thing about comin' home. Looks the same, smells the same, feels the same. You'll realize what's changed is you.", "Momma? Momma? Some days, I feel different than the day before.", "Some people, were born to sit by a river. Some get struck by lightning. Some have an ear for music. Some are artists. Some swim. Some know buttons. Some know Shakespeare. Some are mothers. And some people, dance.", "For what it's worth, it's never too late to be whoever you want to be."];
 
+document.getElementById("change").addEventListener("click", generator);
 
+function generator(){
+ var random = quotes[math.floor(math.random() * 4)];
+ document.getElementById("displayQuotes").innerHTML = random;
+
+}
                                                    
 /*Exercise 8. Create an event listener that will show and hide the message when clicking on the button.*/
 
